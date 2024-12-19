@@ -1,0 +1,130 @@
+@import url(./General.css);
+
+/* ^ ====== Nav Bar ====== */
+/* ?Image Icon */
+.max-w-40px {
+    max-width: 40px !important;
+}
+
+/* ?Nav Bar */
+.bg-nav {
+    background-color: #3A497B !important;
+}
+
+.custom-shadow {
+    box-shadow: 0px 0px 10.5px 5.5px rgba(0, 0, 0, 0.377) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.fs-18 {
+    font-size: 13px !important;
+}
+
+.nav-link:hover {
+    color: deepskyblue !important;
+}
+
+.mt-mi {
+    margin-top: -30px !important;
+}
+
+a {
+    cursor: pointer !important;
+}
+
+/* ^ ====== main ====== */
+/* ?Card */
+.fixed-height {
+    height: 100% !important;
+}
+
+.card {
+    background-color: var(--primary-color) !important;
+    cursor: pointer;
+    transition: transform 0.7s, scale 1.5s 0.1s !important;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    filter: grayscale(0.7) !important;
+    transition: transform 0.7s, filter 0.5s 0.1s !important;
+}
+
+.card:hover .card-body {
+    filter: grayscale(0) !important;
+}
+
+.text-bg-Gray {
+    background-color: #313131 !important;
+}
+
+/* ^ ====== Details Game ====== */
+.main-Details {
+    background-color: var(--second-color);
+}
+
+.description-text {
+    line-height: 22px !important;
+    font-size: 14px !important;
+    text-align: justify !important;
+}
+
+.btn-outline-warning {
+    color: white !important;
+}
+
+/* ^ ====== Loading ====== */
+.loading {
+    background-color: hsla(213, 10%, 17%, 0.89) !important;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid white;
+    animation: rotateLeft 1.5s linear infinite reverse;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    animation: rotateRight 1s linear infinite reverse;
+}
+
+
+@keyframes rotateRight {
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes rotateLeft {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
