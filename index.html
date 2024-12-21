@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/puzzle.png" type="image/x-icon">
+    <title>Home</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/all.min.css">
+    <link rel="stylesheet" href="./Styles/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- * Home Section -->
+    <main class="main z-1">
+        <!-- * Header Image -->
+        <section class="bg-image"></section>
+        <!-- * Navbar Links -->
+        <nav
+            class="navbar navbar-expand-lg ms-auto me-auto overflow-hidden col-md-6 col-lg-9 rounded-4 custom-shadow bg-nav position-sticky top-0 mt-mi z-2">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="./Images/logo-sm.png" alt="logo icon" class="max-w-40px">
+                    GAME REVIEWS
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-info fs-18" value="mmorpg">MMORPG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-18" value="shooter" id="id_shooter">SHOOTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-18" value="sailing">SAILING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-18" value="permadeath">PERMADEATH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-18" value="superhero">SUPERHERO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-18" value="pixel">PIXEL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- * Games List -->
+        <section>
+            <div class="container pt-5">
+                <div class="row gy-4"></div>
+            </div>
+        </section>
+    </main>
+    <!-- * Details Section -->
+    <section class="main-Details details position-fixed start-0 end-0 bottom-0 top-0 d-none">
+        <div class="container pt-5 description"></div>
+    </section>
+    <!-- * Loading Section -->
+    <section class="loading p-0 m-0 position-fixed top-0 bottom-0 start-0 end-0 z-3 d-none">
+        <div class="circle position-absolute top-50 start-50 p-5"></div>
+    </section>
+    <script src="./Scripts/main.js" type="module"></script>
+    <script src="./Scripts/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
